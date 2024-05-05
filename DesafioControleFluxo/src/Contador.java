@@ -20,8 +20,8 @@ public class Contador {
         }
 	}
 	static void contar(int parametroUm, int parametroDois ) throws ParametrosInvalidosException {
-		//validar se parametroUm é MAIOR que parametroDois e lançar a exceção
-        if (parametroUm > parametroDois)
+		//validar se parametroUm é MAIOR ou IGUAL ao parametroDois e lançar a exceção
+        if (parametroUm >= parametroDois)
             throw new ParametrosInvalidosException("Parâmetros inválidos");
 		
 		int contagem = parametroDois - parametroUm;
